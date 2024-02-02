@@ -1,0 +1,196 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Nature
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 0
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings:
+    - serializedVersion: 3
+      m_BuildTarget: DefaultTexturePlatform
+      m_MaxTextureSize: 2048
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: -1
+      m_TextureCompression: 0
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 0
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 1
+      enableAlphaDilation: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 2800000, guid: cc6700a2f1754204a9b1212bb87566da, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 2087979995, guid: cc6700a2f1754204a9b1212bb87566da, type: 3}
+  - {fileID: -110573666, guid: cc6700a2f1754204a9b1212bb87566da, type: 3}
+  - {fileID: 1234997385, guid: cc6700a2f1754204a9b1212bb87566da, type: 3}
+  - {fileID: -155790383, guid: cc6700a2f1754204a9b1212bb87566da, type: 3}
+  - {fileID: 25506411, guid: cc6700a2f1754204a9b1212bb87566da, type: 3}
+  - {fileID: -1281665922, guid: cc6700a2f1754204a9b1212bb87566da, type: 3}
+  - {fileID: -1781764651, guid: cc6700a2f1754204a9b1212bb87566da, type: 3}
+  - {fileID: -205063481, guid: cc6700a2f1754204a9b1212bb87566da, type: 3}
+  - {fileID: -1212958747, guid: cc6700a2f1754204a9b1212bb87566da, type: 3}
+  - {fileID: 1339755264, guid: cc6700a2f1754204a9b1212bb87566da, type: 3}
+  - {fileID: -699477269, guid: cc6700a2f1754204a9b1212bb87566da, type: 3}
+  - {fileID: 292891820, guid: cc6700a2f1754204a9b1212bb87566da, type: 3}
+  - {fileID: -1316548727, guid: cc6700a2f1754204a9b1212bb87566da, type: 3}
+  - {fileID: -1560099771, guid: cc6700a2f1754204a9b1212bb87566da, type: 3}
+  - {fileID: 82675469, guid: cc6700a2f1754204a9b1212bb87566da, type: 3}
+  - {fileID: -322345427, guid: cc6700a2f1754204a9b1212bb87566da, type: 3}
+  - {fileID: 1028949951, guid: cc6700a2f1754204a9b1212bb87566da, type: 3}
+  - {fileID: 1150302261, guid: cc6700a2f1754204a9b1212bb87566da, type: 3}
+  - {fileID: -1240585194, guid: cc6700a2f1754204a9b1212bb87566da, type: 3}
+  - {fileID: -2022046853, guid: cc6700a2f1754204a9b1212bb87566da, type: 3}
+  - {fileID: -478410812, guid: cc6700a2f1754204a9b1212bb87566da, type: 3}
+  - {fileID: 2014894909, guid: cc6700a2f1754204a9b1212bb87566da, type: 3}
+  - {fileID: 1680287494, guid: cc6700a2f1754204a9b1212bb87566da, type: 3}
+  - {fileID: -1679950484, guid: cc6700a2f1754204a9b1212bb87566da, type: 3}
+  - {fileID: -8609622, guid: cc6700a2f1754204a9b1212bb87566da, type: 3}
+  - {fileID: 2116760603, guid: cc6700a2f1754204a9b1212bb87566da, type: 3}
+  - {fileID: 1332182484, guid: cc6700a2f1754204a9b1212bb87566da, type: 3}
+  - {fileID: 619534450, guid: cc6700a2f1754204a9b1212bb87566da, type: 3}
+  - {fileID: -1136440806, guid: cc6700a2f1754204a9b1212bb87566da, type: 3}
+  - {fileID: 343659232, guid: cc6700a2f1754204a9b1212bb87566da, type: 3}
+  - {fileID: 2117821659, guid: cc6700a2f1754204a9b1212bb87566da, type: 3}
+  - {fileID: -1478940477, guid: cc6700a2f1754204a9b1212bb87566da, type: 3}
+  - {fileID: 175591361, guid: cc6700a2f1754204a9b1212bb87566da, type: 3}
+  - {fileID: 896391123, guid: cc6700a2f1754204a9b1212bb87566da, type: 3}
+  - {fileID: -1105997517, guid: cc6700a2f1754204a9b1212bb87566da, type: 3}
+  - {fileID: 1952493134, guid: cc6700a2f1754204a9b1212bb87566da, type: 3}
+  - {fileID: -13334702, guid: cc6700a2f1754204a9b1212bb87566da, type: 3}
+  - {fileID: 1273162186, guid: cc6700a2f1754204a9b1212bb87566da, type: 3}
+  - {fileID: 255948342, guid: cc6700a2f1754204a9b1212bb87566da, type: 3}
+  - {fileID: 1092629347, guid: cc6700a2f1754204a9b1212bb87566da, type: 3}
+  - {fileID: -1132515937, guid: cc6700a2f1754204a9b1212bb87566da, type: 3}
+  - {fileID: 981916017, guid: cc6700a2f1754204a9b1212bb87566da, type: 3}
+  - {fileID: -1028366917, guid: cc6700a2f1754204a9b1212bb87566da, type: 3}
+  - {fileID: -770292122, guid: cc6700a2f1754204a9b1212bb87566da, type: 3}
+  - {fileID: -936005167, guid: cc6700a2f1754204a9b1212bb87566da, type: 3}
+  - {fileID: -497064302, guid: cc6700a2f1754204a9b1212bb87566da, type: 3}
+  - {fileID: -86503355, guid: cc6700a2f1754204a9b1212bb87566da, type: 3}
+  - {fileID: 1413647736, guid: cc6700a2f1754204a9b1212bb87566da, type: 3}
+  - {fileID: 1685670470, guid: cc6700a2f1754204a9b1212bb87566da, type: 3}
+  - {fileID: 742481670, guid: cc6700a2f1754204a9b1212bb87566da, type: 3}
+  - {fileID: 1429202327, guid: cc6700a2f1754204a9b1212bb87566da, type: 3}
+  - {fileID: 241328309, guid: cc6700a2f1754204a9b1212bb87566da, type: 3}
+  - {fileID: -1036194482, guid: cc6700a2f1754204a9b1212bb87566da, type: 3}
+  - {fileID: 1118833014, guid: cc6700a2f1754204a9b1212bb87566da, type: 3}
+  - {fileID: 953205024, guid: cc6700a2f1754204a9b1212bb87566da, type: 3}
+  - {fileID: 552895759, guid: cc6700a2f1754204a9b1212bb87566da, type: 3}
+  - {fileID: -2074994142, guid: cc6700a2f1754204a9b1212bb87566da, type: 3}
+  - {fileID: 887033709, guid: cc6700a2f1754204a9b1212bb87566da, type: 3}
+  - {fileID: -1125450511, guid: cc6700a2f1754204a9b1212bb87566da, type: 3}
+  - {fileID: 1724475590, guid: cc6700a2f1754204a9b1212bb87566da, type: 3}
+  - {fileID: 1007360291, guid: cc6700a2f1754204a9b1212bb87566da, type: 3}
+  - {fileID: -510694079, guid: cc6700a2f1754204a9b1212bb87566da, type: 3}
+  - {fileID: 1208202605, guid: cc6700a2f1754204a9b1212bb87566da, type: 3}
+  - {fileID: -203296794, guid: cc6700a2f1754204a9b1212bb87566da, type: 3}
+  - {fileID: 666143051, guid: cc6700a2f1754204a9b1212bb87566da, type: 3}
+  - {fileID: 766084442, guid: cc6700a2f1754204a9b1212bb87566da, type: 3}
+  - {fileID: -1692385107, guid: cc6700a2f1754204a9b1212bb87566da, type: 3}
+  - {fileID: 223817188, guid: cc6700a2f1754204a9b1212bb87566da, type: 3}
+  - {fileID: 722104741, guid: cc6700a2f1754204a9b1212bb87566da, type: 3}
+  - {fileID: 927469172, guid: cc6700a2f1754204a9b1212bb87566da, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - nature-paltformer-tileset-16x16_33
+  - nature-paltformer-tileset-16x16_32
+  - nature-paltformer-tileset-16x16_31
+  - nature-paltformer-tileset-16x16_30
+  - nature-paltformer-tileset-16x16_37
+  - nature-paltformer-tileset-16x16_36
+  - nature-paltformer-tileset-16x16_35
+  - nature-paltformer-tileset-16x16_34
+  - nature-paltformer-tileset-16x16_8
+  - nature-paltformer-tileset-16x16_9
+  - nature-paltformer-tileset-16x16_2
+  - nature-paltformer-tileset-16x16_3
+  - nature-paltformer-tileset-16x16_0
+  - nature-paltformer-tileset-16x16_1
+  - nature-paltformer-tileset-16x16_6
+  - nature-paltformer-tileset-16x16_7
+  - nature-paltformer-tileset-16x16_4
+  - nature-paltformer-tileset-16x16_5
+  - nature-paltformer-tileset-16x16_64
+  - nature-paltformer-tileset-16x16_65
+  - nature-paltformer-tileset-16x16_66
+  - nature-paltformer-tileset-16x16_67
+  - nature-paltformer-tileset-16x16_28
+  - nature-paltformer-tileset-16x16_60
+  - nature-paltformer-tileset-16x16_29
+  - nature-paltformer-tileset-16x16_61
+  - nature-paltformer-tileset-16x16_62
+  - nature-paltformer-tileset-16x16_63
+  - nature-paltformer-tileset-16x16_48
+  - nature-paltformer-tileset-16x16_49
+  - nature-paltformer-tileset-16x16_20
+  - nature-paltformer-tileset-16x16_68
+  - nature-paltformer-tileset-16x16_21
+  - nature-paltformer-tileset-16x16_69
+  - nature-paltformer-tileset-16x16_59
+  - nature-paltformer-tileset-16x16_22
+  - nature-paltformer-tileset-16x16_42
+  - nature-paltformer-tileset-16x16_58
+  - nature-paltformer-tileset-16x16_23
+  - nature-paltformer-tileset-16x16_43
+  - nature-paltformer-tileset-16x16_24
+  - nature-paltformer-tileset-16x16_40
+  - nature-paltformer-tileset-16x16_25
+  - nature-paltformer-tileset-16x16_41
+  - nature-paltformer-tileset-16x16_55
+  - nature-paltformer-tileset-16x16_26
+  - nature-paltformer-tileset-16x16_46
+  - nature-paltformer-tileset-16x16_54
+  - nature-paltformer-tileset-16x16_27
+  - nature-paltformer-tileset-16x16_47
+  - nature-paltformer-tileset-16x16_57
+  - nature-paltformer-tileset-16x16_44
+  - nature-paltformer-tileset-16x16_56
+  - nature-paltformer-tileset-16x16_45
+  - nature-paltformer-tileset-16x16_51
+  - nature-paltformer-tileset-16x16_50
+  - nature-paltformer-tileset-16x16_53
+  - nature-paltformer-tileset-16x16_52
+  - nature-paltformer-tileset-16x16_11
+  - nature-paltformer-tileset-16x16_10
+  - nature-paltformer-tileset-16x16_13
+  - nature-paltformer-tileset-16x16_12
+  - nature-paltformer-tileset-16x16_15
+  - nature-paltformer-tileset-16x16_14
+  - nature-paltformer-tileset-16x16_17
+  - nature-paltformer-tileset-16x16_16
+  - nature-paltformer-tileset-16x16_19
+  - nature-paltformer-tileset-16x16_18
+  - nature-paltformer-tileset-16x16_39
+  - nature-paltformer-tileset-16x16_38
+  m_RenderDataMap: {}
+  m_Tag: Nature
+  m_IsVariant: 0
