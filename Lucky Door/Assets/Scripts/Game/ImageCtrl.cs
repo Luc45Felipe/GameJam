@@ -1,27 +1,22 @@
 using System;
-using System.Collections;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public sealed class ImageCtrl : MonoBehaviour
 {
-    private Image _image;
-
-    private float _elapsedTime;
-
-    [SerializeField] private float _nextStageDelay;
-    [SerializeField] private float _imageDelay;
+    public static Action<bool> ImageShown;
 
     private AudioSource _audioSorce;
+    private Image _image;
 
     private bool _stageFinish;
     private bool _isFunny;
 
+    private float _elapsedTime;
+
     void Awake()
     {
-        GameManager.ShowFunny += GameManager_ShowFunnyImage;
-        GameManager.ShowSad += GameManager_ShowSadImage;
+        GameManager.ShowDoorImage += GameManager_ShowDoorImage;
 
         _image = GetComponent<Image>();
         _audioSorce = GetComponent<AudioSource>();
@@ -29,59 +24,36 @@ public sealed class ImageCtrl : MonoBehaviour
 
     void Update()
     {
-        _elapsedTime += Time.deltaTime;
-        _image.color = new Color(255, 255, 255, Mathf.InverseLerp(0, _imageDelay, _elapsedTime));
-
-        if(_image.color.a == 1 && _stageFinish == false)
+        if(_stageFinish == false)
         {
-            _stageFinish = true;
-            StartCoroutine(NextStageDelay());
-        }
-    }
-
-    IEnumerator NextStageDelay()
-    {
-        if(_isFunny)
-        {
-            yield return new WaitForSeconds(_nextStageDelay);
-
-            if(SceneManager.GetActiveScene().buildIndex + 1 < SceneManager.sceneCountInBuildSettings)
+            if(_image.color.a == 1)
             {
-                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+                _stageFinish = true;
+                OnImageShown();
             }
             else
             {
-                SceneManager.LoadScene(0);
+                _elapsedTime += Time.deltaTime;
+                _image.color = new Color(255, 255, 255, Mathf.InverseLerp(0, GameManager.ImageDelayCount, _elapsedTime));
             }
         }
-        else
-        {
-            SceneManager.LoadScene(0);
-        }
-        
     }
 
-    void GameManager_ShowFunnyImage(Sprite image, AudioClip clip)
+    void GameManager_ShowDoorImage(Sprite image, AudioClip clip, bool isFunny)
     {
-        _isFunny = true;
+        _isFunny = isFunny;
         _image.sprite = image;
-
         _audioSorce.clip = clip;
         _audioSorce.Play();
     }
 
-    void GameManager_ShowSadImage(Sprite image, AudioClip clip)
+    private void OnImageShown()
     {
-        _isFunny = false;
-        _image.sprite = image;
-
-        _audioSorce.clip = clip;
-        _audioSorce.Play();
+        ImageShown?.Invoke(_isFunny);
     }
 
     void OnDestroy()
     {
-        GameManager.ShowFunny -= GameManager_ShowFunnyImage;
-        GameManager.ShowSad -= GameManager_ShowSadImage;
+        GameManager.ShowDoorImage -= GameManager_ShowDoorImage;
     }
 }

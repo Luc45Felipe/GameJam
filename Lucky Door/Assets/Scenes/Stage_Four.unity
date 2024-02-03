@@ -179,6 +179,14 @@ PrefabInstance:
       propertyPath: _funnyImage
       value: 
       objectReference: {fileID: 21300000, guid: b3caa8206c3907341986a107f95d820f, type: 3}
+    - target: {fileID: 3567444806016373521, guid: 16c3df223c975fc4eb50990378b5a270, type: 3}
+      propertyPath: _imageDelayCount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3567444806016373521, guid: 16c3df223c975fc4eb50990378b5a270, type: 3}
+      propertyPath: _nextStageDelayCount
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5178242880136799269, guid: 16c3df223c975fc4eb50990378b5a270, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.4943832

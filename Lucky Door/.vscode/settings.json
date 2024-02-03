@@ -52,5 +52,5 @@
         "Temp/": true
     },
     "dotnet.preferCSharpExtension": true,
-    "dotnet.defaultSolution": "Porta dos Desesperados.sln"
+    "dotnet.defaultSolution": "Lucky Door.sln"
 }
