@@ -1,16 +1,19 @@
+using System;
 using UnityEngine;
 
 namespace Remake
 {
-    public class PlayerCtrl : MonoBehaviour
+    public sealed class PlayerCtrl : MonoBehaviour
     {
+        public static Action FallInLimbo;
+
         [Header("Settings")]
         [SerializeField] private float _movementSpeed;
         [SerializeField] private float _jumpForce;
 
         [Header("References")]
-        [SerializeField] private AudioClip _jumpClip;
         [SerializeField] private AudioClip _walkClip;
+        [SerializeField] private AudioClip _jumpClip;
 
         private SpriteRenderer _spriteRenderer;
         private AudioSource _audioSource;
@@ -21,7 +24,6 @@ namespace Remake
         private float _verticalMov;
         private bool _isOnLadder;
         private bool _isClimbing;
-        private bool _onGround;
         private bool _toJump;
 
         void Awake()
@@ -40,20 +42,28 @@ namespace Remake
             }
 
             // climb
-            _verticalMov = Input.GetAxis("Vertical");
-
-            if(_isOnLadder && Mathf.Abs(_verticalMov) > 0f)
+            if(_isOnLadder)
             {
-                _isClimbing = true;
+                _verticalMov = Input.GetAxis("Vertical");
+                if(Mathf.Abs(Input.GetAxis("Vertical")) > 0f)
+                {
+                    _isClimbing = true;
+                }
             }
 
             //jump
-            _onGround = Physics2D.OverlapCircle(new Vector2(transform.position.x - 0.06f, transform.position.y - 0.45f), 0.4f, 1<<3);
-
-            if(Input.GetButtonDown("Jump") && _toJump == false && _onGround)
+            if(Input.GetButtonDown("Jump"))
             {
-                _toJump = true; 
+                if(_toJump == false && IsOnGround())
+                {
+                    _toJump = true; 
+                }
             }
+        }
+
+        bool IsOnGround()
+        {
+            return Physics2D.OverlapCircle(new Vector2(transform.position.x - 0.06f, transform.position.y - 0.45f), 0.4f, 1<<3);
         }
 
         void FixedUpdate()
@@ -92,7 +102,7 @@ namespace Remake
                 _audioSource.loop = false;
                 _audioSource.Play();
             }
-            else if(_horizontalMov != 0 && _onGround)
+            else if(_horizontalMov != 0 && IsOnGround())
             {
                 _animator.SetBool("walk", true);
 
@@ -127,11 +137,21 @@ namespace Remake
             }
         }
 
+        private void OnFallInLimbo()
+        {
+            FallInLimbo?.Invoke();
+        }
+
         private void OnTriggerEnter2D(Collider2D collider)
         {
             if(collider.gameObject.CompareTag("Ladder"))
             {
                 _isOnLadder = true;
+            }
+
+            if(collider.gameObject.CompareTag("Limbo"))
+            {
+                OnFallInLimbo();
             }
         }
 
